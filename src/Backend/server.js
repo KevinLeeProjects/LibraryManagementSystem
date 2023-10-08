@@ -2,9 +2,9 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const cors = require('cors');
-const port = 3001;
+const port = process.env.PORT || 3000;
 
-app.use(cors({origin: `http://localhost:3000`}));
+app.use(cors({origin: `https://library-management-service.onrender.com`}));
 
 app.use('/', require('./routes/index'));
 

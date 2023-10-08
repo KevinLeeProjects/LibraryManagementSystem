@@ -30,7 +30,7 @@ function App() {
   );
 }
 
-axios.get('http://localhost:3001/public')
+axios.get('https://library-management-service.onrender.com/public')
   .then(response => {
     // Handle the response data
     console.log(response.data.message);
