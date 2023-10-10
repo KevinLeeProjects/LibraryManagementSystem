@@ -7,8 +7,8 @@ const port = process.env.PORT || 3001;
 require('dotenv').config();
 
 //For deployment
-//app.use(cors({origin: `https://library-management-service.onrender.com`}));
-app.use(cors({origin: `http://localhost:3000`}));
+app.use(cors({origin: `https://library-management-system-react.onrender.com`}));
+//app.use(cors({origin: `http://localhost:3000`}));
 app.use(bodyParser.json());
 
 //Test

@@ -6,7 +6,7 @@ const handleSubmit = async (e, formData, setLabel) => {
   
     try
     {
-        const response = await fetch(`http://localhost:3001/get-book?data=${encodeURIComponent(formData.data)}`, {
+        const response = await fetch(`https://library-management-service.onrender.com/get-book?data=${encodeURIComponent(formData.data)}`, {
             method: 'GET'
         });
         let test = [];
