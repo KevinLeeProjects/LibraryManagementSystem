@@ -8,16 +8,12 @@ const client = new Client({
     database: "postgres"
 });
 
-client.connect();
-
-client.query(`Select * from users`, (error, res) =>{
-    if(!error)
-    {
-        console.log(res.rows);
-    }
-    else
-    {
-        console.log(error.message);
-    }
-    client.end();
+client.connect((err) => {
+  if (err) {
+    console.error('Error connecting to the database: ' + err.stack);
+    return;
+  }
+  console.log('Connected to the database as id ' + client.threadId);
 });
+
+module.exports = client;

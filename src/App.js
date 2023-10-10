@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AddBook from './pages/AddBook/AddBook';
 import Home from './pages/Home/Home';
 import Layout from './pages/Layout/Layout';
+import GetBook from './pages/GetBook/GetBook';
 import axios from 'axios';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
               <Route path="/" element={<Home />} />
               {/* <Route path="/get-user" element={<GetBook />} /> */}
               <Route path="/add-book" element={<AddBook />} />
+              <Route path="/get-book" element={<GetBook />} />
               
             </Route>
           </Routes>

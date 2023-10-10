@@ -10,6 +10,6 @@ function Home() {
       {/* <img src={img} className="KLLogo"></img> */}
     </div>
   );
-}
+};
 
 export default Home;
