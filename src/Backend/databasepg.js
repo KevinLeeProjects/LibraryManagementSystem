@@ -15,7 +15,8 @@ const client = new Client({
   user: "librarymanagementsystem_2jb4_user",
   port: 5432,
   password: process.env.DB_PASSWORD,
-  database: "librarymanagementsystem_2jb4"
+  database: "librarymanagementsystem_2jb4",
+  ssl: true
 });
 
 client.connect((err) => {
