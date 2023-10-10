@@ -21,6 +21,7 @@ const handleSubmit = async (e, formData) => {
       window.location = '/';
     } else {
       console.error('Form submission failed');
+      window.alert(`Book with ISBN ${formData.isbn} already exists`);
       // Handle error (e.g., show an error message)
     }
   }

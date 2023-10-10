@@ -24,6 +24,7 @@ router.post('/', (req, res) => {
             if(result.rows.length > 0)
             {
                 console.log(`User already exists: ${JSON.stringify(result.rows[0])}`);
+                res.status(400).send(`User already exists`);
             }
             else
             {
@@ -37,12 +38,12 @@ router.post('/', (req, res) => {
                 client.query(createUser, newUserValues, (error, results) => {
                     if(error)
                     {
-                        
+                        res.status(400).send(error);
                         console.log(`error ${error}`);
                     }
                     else
                     {
-                        res.send(`${firstName} added successfully`);
+                        res.status(201).send(`${firstName} added successfully`);
                         console.log(`results ${results}`);
                     }
                 });
@@ -50,6 +51,7 @@ router.post('/', (req, res) => {
         }
         else
         {
+            res.status(400).send(err);
             console.log(`error ${err}`);
             
         }

@@ -26,6 +26,8 @@ app.use('/add-user', require('./routes/AddUser'));
 //Get a user
 app.use('/get-user', require('./routes/GetUser'));
 
+//Checkout a book to a user
+app.use('/checkout', require('./routes/Checkout'));
 //More tests
 // const testData = {
 //     message: `Hello Friend!`

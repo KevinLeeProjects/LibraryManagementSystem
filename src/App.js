@@ -7,6 +7,7 @@ import Layout from './pages/Layout/Layout';
 import GetBook from './pages/GetBook/GetBook';
 import AddUser from './pages/AddUser/AddUser';
 import GetUser from './pages/GetUser/GetUser';
+import Checkout from './pages/Checkout/Checkout'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
               <Route path="/get-book" element={<GetBook />} />
               <Route path="/get-user" element={<GetUser />} />
               <Route path="/add-user" element = {<AddUser />} />
+              <Route path="/checkout" element={<Checkout />} />
             </Route>
           </Routes>
         </BrowserRouter>

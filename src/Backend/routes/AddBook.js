@@ -72,6 +72,7 @@ router.post('/', (req, res) => {
                     if(error)
                     {
                         console.log(`error ${error}`);
+                        res.status(400).send(error);
                     }
                     else
                     {
@@ -82,6 +83,7 @@ router.post('/', (req, res) => {
         }
         else
         {
+            res.status(400).send(err);
             console.log(`error ${err}`);
             
         }
@@ -91,9 +93,10 @@ router.post('/', (req, res) => {
 
     client.query(insertQuery, bookValues, (err, result) =>{
         if(!err){
-            res.send(`${title} added successfully`);
+            res.status(201).send(`${title} added successfully`);
         }
         else{
+            res.status(400).send(err.message);
             console.log(err.message);
         }
     });
