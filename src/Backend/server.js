@@ -22,6 +22,10 @@ app.use('/get-book', require('./routes/GetBook'));
 
 //Add a new user
 app.use('/add-user', require('./routes/AddUser'));
+
+//Get a user
+app.use('/get-user', require('./routes/GetUser'));
+
 //More tests
 // const testData = {
 //     message: `Hello Friend!`

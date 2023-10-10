@@ -6,6 +6,7 @@ import Home from './pages/Home/Home';
 import Layout from './pages/Layout/Layout';
 import GetBook from './pages/GetBook/GetBook';
 import AddUser from './pages/AddUser/AddUser';
+import GetUser from './pages/GetUser/GetUser';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               {/* <Route path="/get-user" element={<GetBook />} /> */}
               <Route path="/add-book" element={<AddBook />} />
               <Route path="/get-book" element={<GetBook />} />
+              <Route path="/get-user" element={<GetUser />} />
               <Route path="/add-user" element = {<AddUser />} />
             </Route>
           </Routes>

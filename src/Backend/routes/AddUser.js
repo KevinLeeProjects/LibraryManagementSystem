@@ -33,7 +33,7 @@ router.post('/', (req, res) => {
                     VALUES($1, $2, $3, $4, $5)
                 `;
                 //Create a new user
-                const newUserValues = [firstName, lastName, email, [], []];
+                const newUserValues = [firstName, lastName, email.toLowerCase(), [], []];
                 client.query(createUser, newUserValues, (error, results) => {
                     if(error)
                     {
