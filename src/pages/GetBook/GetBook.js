@@ -42,7 +42,7 @@ function GetBook(){
     return(
         <div className="getBookPage">
             <h1>Get Book</h1>
-            <form onSubmit={(e) => handleSubmit(e, formData, setLabel)}>
+            <form className="getBookForm" onSubmit={(e) => handleSubmit(e, formData, setLabel)}>
                 <label>ISBN/Book Title/Author Name</label>
                 <input
                     type="text"

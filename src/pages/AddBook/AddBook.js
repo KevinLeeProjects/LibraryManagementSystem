@@ -17,6 +17,8 @@ const handleSubmit = async (e, formData) => {
     if (response.ok) {
       console.log('Form submitted successfully');
       // Handle success (e.g., show a success message)
+      window.alert(`${formData.title} added successfully`);
+      window.location = '/';
     } else {
       console.error('Form submission failed');
       // Handle error (e.g., show an error message)
@@ -39,7 +41,7 @@ function AddBook() {
   return (
     <div className="add">
       <h1>Add Book</h1>
-      <form onSubmit={(e) => handleSubmit(e, formData)}>
+      <form className="addBookForm" onSubmit={(e) => handleSubmit(e, formData)}>
         <div className="title">
           <label>Title*</label>
           <input

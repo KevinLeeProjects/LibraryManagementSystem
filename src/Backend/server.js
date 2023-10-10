@@ -17,8 +17,11 @@ app.use('/', require('./routes/index'));
 //Route to add a new book
 app.use('/add-book', require('./routes/AddBook'));
 
-
+//Get specific book
 app.use('/get-book', require('./routes/GetBook'));
+
+//Add a new user
+app.use('/add-user', require('./routes/AddUser'));
 //More tests
 // const testData = {
 //     message: `Hello Friend!`

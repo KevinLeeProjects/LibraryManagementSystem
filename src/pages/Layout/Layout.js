@@ -18,6 +18,9 @@ function Layout() {
                 <Link to="/all-transactions">All Transactions</Link>
               </li>
               <li>
+                <Link to="/check-out">Check Out</Link>
+              </li>
+              <li>
                 <Link to="/add-user">Add User</Link>
               </li>
               <li>
