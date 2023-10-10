@@ -5,7 +5,6 @@ import AddBook from './pages/AddBook/AddBook';
 import Home from './pages/Home/Home';
 import Layout from './pages/Layout/Layout';
 import GetBook from './pages/GetBook/GetBook';
-import axios from 'axios';
 
 function App() {
   return (

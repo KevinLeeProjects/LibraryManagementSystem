@@ -8,3 +8,5 @@ router.get('/', (req, res) => {
     
     const getQuery = `SELECT * FROM BOOK`;
 });
+
+module.exports = router;
