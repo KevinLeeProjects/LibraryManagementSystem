@@ -14,7 +14,7 @@ const client = new Client({
   host: "dpg-ckittea12bvs73dsf680-a.oregon-postgres.render.com",
   user: "librarymanagementsystem_2jb4_user",
   port: 5432,
-  password: process.env.DB_PASSWORD,
+  password: "CR7WGIbKWRm1Uq7O5paAN6C3rp4ZebDt",
   database: "librarymanagementsystem_2jb4",
   ssl: true
 });
