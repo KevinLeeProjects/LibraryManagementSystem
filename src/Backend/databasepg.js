@@ -2,12 +2,20 @@ const {Client} = require('pg');
 require('dotenv').config();
 
 //Database login
+// const client = new Client({
+//     host: "localhost",
+//     user: "postgres",
+//     port: 5432,
+//     password: process.env.DB_PASSWORD,
+//     database: "postgres"
+// });
+
 const client = new Client({
-    host: "localhost",
-    user: "postgres",
-    port: 5432,
-    password: process.env.DB_PASSWORD,
-    database: "postgres"
+  host: "dpg-ckittea12bvs73dsf680-a.oregon-postgres.render.com",
+  user: "librarymanagementsystem_2jb4_user",
+  port: 5432,
+  password: process.env.DB_PASSWORD,
+  database: "librarymanagementsystem_2jb4"
 });
 
 client.connect((err) => {
