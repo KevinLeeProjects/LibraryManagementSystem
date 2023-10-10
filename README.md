@@ -1,2 +1,2 @@
 # LibraryManagementSystem
-Library Management System in HTML, CSS, React, Node.js. Database managed in PostgreSQL
+Library Management System in HTML, CSS, React, JavaScript, and Node.js. Database managed in PostgreSQL
