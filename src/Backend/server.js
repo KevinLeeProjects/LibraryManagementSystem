@@ -3,7 +3,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const app = express();
 const cors = require('cors');
-const port = 3001;
+const port = process.env.PORT || 3001;
 require('dotenv').config();
 
 //For deployment
