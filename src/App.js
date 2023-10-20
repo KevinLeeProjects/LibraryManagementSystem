@@ -7,7 +7,8 @@ import Layout from './pages/Layout/Layout';
 import GetBook from './pages/GetBook/GetBook';
 import AddUser from './pages/AddUser/AddUser';
 import GetUser from './pages/GetUser/GetUser';
-import Checkout from './pages/Checkout/Checkout'
+import Checkout from './pages/Checkout/Checkout';
+import AllTransactions from './pages/AllTransactions/AllTransactions';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
               <Route path="/get-user" element={<GetUser />} />
               <Route path="/add-user" element = {<AddUser />} />
               <Route path="/checkout" element={<Checkout />} />
+              <Route path="/all-transactions" element={<AllTransactions />} />
             </Route>
           </Routes>
         </BrowserRouter>

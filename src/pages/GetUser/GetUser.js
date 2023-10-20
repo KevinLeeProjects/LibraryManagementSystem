@@ -6,7 +6,11 @@ const handleSubmit = async (e, formData, setLabel) => {
   
     try
     {
-        const response = await fetch(`https://library-management-service.onrender.com/get-user?email=${encodeURIComponent(formData.email)}`, {
+        //For deployment
+        //const response = await fetch(`https://library-management-service.onrender.com/get-user?email=${encodeURIComponent(formData.email)}`, {
+        
+        //For test
+        const response = await fetch(`http://localhost:3001/get-user?email=${encodeURIComponent(formData.email)}`, {
             method: 'GET'
         });
         let test = [];

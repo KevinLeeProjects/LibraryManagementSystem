@@ -6,7 +6,11 @@ const handleSubmit = async (e, formData) => {
 
   try
   {
-    const response = await fetch(`https://library-management-service.onrender.com/add-user`, {
+    //for deployment
+    //const response = await fetch(`https://library-management-service.onrender.com/add-user`, {
+      //
+      //for test
+    const response = await fetch(`http://localhost:3001/add-user`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
