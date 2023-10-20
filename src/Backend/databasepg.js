@@ -2,22 +2,22 @@ const {Client} = require('pg');
 require('dotenv').config();
 
 //Database login
-// const client = new Client({
-//     host: "localhost",
-//     user: "postgres",
-//     port: 5432,
-//     password: process.env.DB_PASSWORD,
-//     database: "postgres"
-// });
-
 const client = new Client({
-  host: "dpg-ckittea12bvs73dsf680-a.oregon-postgres.render.com",
-  user: "librarymanagementsystem_2jb4_user",
-  port: 5432,
-  password: "CR7WGIbKWRm1Uq7O5paAN6C3rp4ZebDt",
-  database: "librarymanagementsystem_2jb4",
-  ssl: true
+    host: "localhost",
+    user: "postgres",
+    port: 5432,
+    password: process.env.DB_PASSWORD,
+    database: "postgres"
 });
+
+// const client = new Client({
+//   host: "dpg-ckittea12bvs73dsf680-a.oregon-postgres.render.com",
+//   user: "librarymanagementsystem_2jb4_user",
+//   port: 5432,
+//   password: "CR7WGIbKWRm1Uq7O5paAN6C3rp4ZebDt",
+//   database: "librarymanagementsystem_2jb4",
+//   ssl: true
+// });
 
 client.connect((err) => {
   if (err) {
